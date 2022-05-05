@@ -1,0 +1,110 @@
+body {
+    font-family: cursive;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 10px 100px;
+    line-height: 1.4;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    margin: 30px;
+}
+
+#modal {
+    display: none;
+}
+
+#modal.open {
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal__wrapper {
+    background-color: #0000004d;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.modal__wrapper.open {
+    opacity: 1;
+    z-index: 999;
+}
+
+.modal {
+    background-color: #dfdfdf;
+    box-shadow: 0 1px 4px #0000004d;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 380px;
+    max-width: 95%;
+    border-radius: 15px;
+}
+
+.modal__img {
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.modal__body {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 0 0 1em #000000;
+}
+
+.modal__title {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.modal__text {
+    margin: 10px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.button {
+    border: 0;
+    margin: 15px;
+    opacity: 0.8;
+    outline: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 50px;
+    box-shadow: 0 0 1em #000000;
+    transition: all 0.5s ease-in-out;
+    background-image: linear-gradient(to right, #0746f3, #1faff1);
+}
+
+.button:hover {
+    transform: scale(1.2);
+}
+
+.footer {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+span {
+    color: blue;
+}
